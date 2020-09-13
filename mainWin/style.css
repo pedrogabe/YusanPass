@@ -1,0 +1,31 @@
+*{
+    margin:0
+}
+
+a.sacar{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(100,255,0,1));
+}
+a.sacar[select=true]{
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,200,1));
+}
+
+div.sacar{
+    overflow:hidden;
+    background-image: linear-gradient(to top,rgba(0,0,0,0), rgba(0,0,200,1));
+    width:100vw;
+}
+
+.sacar p{
+    font-size: 20px;
+    margin:10px
+}
+
+.sacar button{
+    appearance: none;
+    border:none;
+    margin-left:2px;
+}
+
+.sacar button:focus{
+    background-color:greenyellow;
+}
