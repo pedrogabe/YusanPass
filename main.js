@@ -14,10 +14,6 @@ app.on('ready',function(){
         {label:"Debug", submenu:[
             {label:"Refresh", role:'reload', accelerator:"f5"},
             {role:'toggledevtools'},
-            {label:"Ajustar ruta", submenu:[
-                {label:"Seleccionar...", click(){setPathToFile(false)}},
-                {label:"Default",click(){setPathToFile(true)}}
-            ]},
             {label:"Refrescar lista", accelerator:"Ctrl+R", click(){loadPasswords()}}
         ]}
     ];
@@ -46,12 +42,6 @@ function openAddWin(){
 }
 
 var filePath = path.join(__dirname,'list.txt')
-
-function setPathToFile(setToDefault){
-    if(setToDefault==true){
-        filePath=path.join(__dirname,'list.txt')
-    }
-}
 
 var passwordsList=[], usable=[], neverUsed=[];
 var fileString;//Quizás sería más simple usando archivos JSON
